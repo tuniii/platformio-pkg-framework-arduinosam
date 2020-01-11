@@ -90,6 +90,8 @@ static const uint8_t A4  = PIN_A4;
 #define PIN_SPI_SCK          (5u)
 #define PIN_SPI_SS			 (6u)
 #define PERIPH_SPI           sercom0
+#define PAD_SPI_TX           SPI_PAD_2_SCK_3
+#define PAD_SPI_RX           SERCOM_RX_PAD_1
 
 static const uint8_t SS	  = PIN_SPI_SS ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
