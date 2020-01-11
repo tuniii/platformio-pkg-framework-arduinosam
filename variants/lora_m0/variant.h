@@ -56,26 +56,39 @@ extern "C"
 #define NUM_DIGITAL_PINS     (11u)
 
 #define PIN_VREF_EN		(0u)
-#define PIN_VBAT		(1u)
-#define PIN_NTC3		(5u)
-#define PIN_NTC3		(6u)
-#define PIN_NTC1		(7u)
-#define PIN_NTC2		(8u)
-#define PIN_NSS			(9u)
-#define PIN_DIO0		(10u)
-#define PIN_RFM_RESET	(11u)
+#define PIN_DIO0		(1u)
+#define PIN_RFM_RESET	(2u)
+#define PIN_VBAT		(7u)
+#define PIN_NTC1		(8u)
+#define PIN_NTC2		(9u)
+#define PIN_NTC3		(10u)
+#define PIN_NTC4		(11u)
 
+/*
+ * Analog pins
+ */
+#define PIN_A0          (7u)
+#define PIN_A1          (PIN_A0+1)
+#define PIN_A2          (PIN_A0+2)
+#define PIN_A3          (PIN_A0+3)
+#define PIN_A4          (PIN_A0+4)
+
+static const uint8_t A0  = PIN_A0;
+static const uint8_t A1  = PIN_A1;
+static const uint8_t A2  = PIN_A2;
+static const uint8_t A3  = PIN_A3;
+static const uint8_t A4  = PIN_A4;
 #define ADC_RESOLUTION	12
 
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 2
+#define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MOSI         (3u)
-#define PIN_SPI_MISO         (2u)
-#define PIN_SPI_SCK          (4u)
-#define PIN_SPI_SS			 PIN_NSS
+#define PIN_SPI_MOSI         (4u)
+#define PIN_SPI_MISO         (3u)
+#define PIN_SPI_SCK          (5u)
+#define PIN_SPI_SS			 (6u)
 #define PERIPH_SPI           sercom0
 
 static const uint8_t SS	  = PIN_SPI_SS ;
